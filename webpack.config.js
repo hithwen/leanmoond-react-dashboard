@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var basePath = __dirname;
 
@@ -12,6 +13,7 @@ module.exports = {
 
   entry: [
     './main.tsx',
+    './css/main.css',
     '../node_modules/bootstrap/dist/css/bootstrap.css'
   ],
   output: {
@@ -68,4 +70,4 @@ module.exports = {
       hash: true
     })
   ]
-}
+};

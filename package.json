@@ -17,7 +17,8 @@
   "devDependencies": {
     "@types/react": "~0.14.41",
     "@types/react-dom": "~0.14.18",
-    "css-loader": "~0.25.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.25.0",
     "file-loader": "~0.9.0",
     "html-webpack-plugin": "~2.22.0",
     "style-loader": "~0.13.1",

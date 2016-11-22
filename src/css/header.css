@@ -1,0 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+.navbar-brand img {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 5.5px; }
+
+.student-name {
+  padding-left: 20px;
+  padding-top: 5.5px;
+  display: inline-block; }
+
+@media screen and (max-width: 768px) {
+  .student-name {
+    padding-left: 10px; } }
