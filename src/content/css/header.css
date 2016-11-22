@@ -4,11 +4,10 @@
   background-color: #fce4ec;
 }
 
-.navbar-brand i {
+.navbar-brand img {
   display: inline-block;
   padding-left: 20px;
-  padding-top: 5.5px;
-}
+  padding-top: 5.5px; }
 
 .student-name {
   padding-left: 20px;

@@ -11,13 +11,13 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "~3.3.7",
+    "font-awesome": "^4.7.0",
     "react": "~15.3.2",
     "react-dom": "~15.3.2"
   },
   "devDependencies": {
     "@types/react": "~0.14.41",
     "@types/react-dom": "~0.14.18",
-    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.25.0",
     "file-loader": "~0.9.0",
     "html-webpack-plugin": "~2.22.0",
