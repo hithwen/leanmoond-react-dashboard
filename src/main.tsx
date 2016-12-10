@@ -1,9 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { HelloComponent } from './hello';
+import { DashboardComponent } from './dashboard';
 
 ReactDOM.render(
-  <HelloComponent/>,
+  <DashboardComponent/>,
   document.getElementById('root')
 );
