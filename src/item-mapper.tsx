@@ -9,12 +9,12 @@ export module ItemMapper {
   };
 
   export function mapOptionToIcon (icon: DashboardIcons) {
-    return dashboardMapOptionToIcon[DashboardIcons[icon]];
+    return dashboardMapOptionToIcon[icon];
   };
 
-  var dashboardMapOptionToIcon: { [id: string]: string; } = {
-     EDIT: 'fa fa-pencil-square-o fa-5x',
-     EVALUATE: 'fa fa-star-half-o fa-5x',
-     BROWSE: 'fa fa-eye fa-5x'
+  var dashboardMapOptionToIcon: { [id: number]: string; } = {
+    [DashboardIcons.EDIT]: 'fa fa-pencil-square-o fa-5x',
+    [DashboardIcons.EVALUATE]: 'fa fa-star-half-o fa-5x',
+    [DashboardIcons.BROWSE]: 'fa fa-eye fa-5x'
   };
 }
