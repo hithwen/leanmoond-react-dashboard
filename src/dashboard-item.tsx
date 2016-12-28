@@ -5,7 +5,7 @@ export const DashboardItemComponent = (props: {
   return (
     <div className={"col-md-" + props.columnsize +" dasboard-item"}>
       <p className="text-center">
-        <i className={"fa fa-" + props.icon + " fa-5x"} aria-hidden="true"></i>
+        <i className={props.icon} aria-hidden="true"></i>
       </p>
       <p className="text-center">
         {props.text}

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DashboardItemComponent } from './dashboard_item';
+import { DashboardItemComponent } from './dashboard-item';
 
 export const DashboardComponent = (props: {
   title: string,
