@@ -10,13 +10,11 @@ export const DashboardComponent = (props: {
       <div className="dashboard-title">
           <h3>{props.title}</h3>
       </div>
-      <div className="dashboard-content">
       <div className="dashboard-items">
       {props.items.map(
         function(item) {
           return <DashboardItemComponent icon={item[0]} text={item[1]} columnsize={4}/>
       })}
-      </div>
       </div>
     </div>
   );
