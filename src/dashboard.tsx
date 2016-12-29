@@ -7,13 +7,17 @@ export const DashboardComponent = (props: {
 
   return (
     <div className="dashboard">
-      <div className="col-md-12 dashboardtitle">
-          <h3 className="text-center">{props.title}</h3>
+      <div className="dashboard-title">
+          <h3>{props.title}</h3>
       </div>
-        { props.items.map(
-          function(item) {
-            return <DashboardItemComponent icon={item[0]} text={item[1]} columnsize={4}/>
-        })}
+      <div className="dashboard-content">
+      <div className="dashboard-items">
+      {props.items.map(
+        function(item) {
+          return <DashboardItemComponent icon={item[0]} text={item[1]} columnsize={4}/>
+      })}
+      </div>
+      </div>
     </div>
   );
 }

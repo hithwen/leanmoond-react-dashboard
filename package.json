@@ -7,10 +7,11 @@
     "start": "webpack-devserver --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "David Atencia <david.atencia@gmail.com>",
+  "author": "Julia S.Simon <hithwen@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "~3.3.7",
+    "flexbox": "0.0.3",
     "font-awesome": "^4.7.0",
     "react": "~15.3.2",
     "react-dom": "~15.3.2"
