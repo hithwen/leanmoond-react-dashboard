@@ -1,14 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import {DashboardItem, DashboardIcons, DashboardComponent} from './components/dashboard/index';
+import {DashboardItem, DashboardComponent} from './components/dashboard/index';
+import {DashboardIcons} from './components/dashboard/item-mapper';
 
-let dashboardItems: Array<DashboardItem> = [
+let dashboardItems: DashboardItem[] = [
   {icon: DashboardIcons.EDIT, name:"Edit Content", reference:""},
   {icon: DashboardIcons.EVALUATE, name:"Evaluate tests", reference:""},
   {icon: DashboardIcons.BROWSE, name:"Browse Content", reference:""}];
-
-console.log(dashboardItems);
 
 ReactDOM.render(
   <DashboardComponent title="Master Lemon Code" items={dashboardItems}/>,

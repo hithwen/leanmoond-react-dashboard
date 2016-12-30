@@ -5,7 +5,7 @@ import { DashboardItemComponent, DashboardItem } from './dashboard-item';
 * title: Dasboard Title
 * items: [icon-css, icon name]
 */
-export const _DashboardComponent = (props: {title: string,
+export const DashboardComponent = (props: {title: string,
   items : Array<DashboardItem>}) => {
   return (
     <div className="dashboard">

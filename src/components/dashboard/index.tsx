@@ -1,12 +1,10 @@
-import { DashboardItem } from './dashboard-item';
-import { _DashboardComponent } from './dashboard';
-import { ItemMapper } from './item-mapper';
+import {DashboardItem} from './dashboard-item';
+import { DashboardComponent } from './dashboard';
+import {DashboardIcons} from './item-mapper';
 
-export enum DashboardIcons {
-  'EDIT',
-  'EVALUATE',
-  'BROWSE'
-};
+// DashboardIcons should be exported but I dont know how
 
-export interface DashboardItem {};
-export const DashboardComponent = _DashboardComponent;
+export {
+  DashboardItem,
+  DashboardComponent
+}

@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {DashboardIcons} from './index'
-import {ItemMapper} from './item-mapper';
+import {DashboardIcons, ItemMapper} from './item-mapper';
 
 export interface DashboardItem {
   icon: DashboardIcons,
