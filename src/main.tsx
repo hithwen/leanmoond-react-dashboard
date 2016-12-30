@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { DashboardComponent } from './dashboard';
-import {ItemMapper} from './item-mapper';
+import { DashboardComponent } from './components/dashboard/dashboard';
+import {ItemMapper} from './components/dashboard/item-mapper';
 
 let dashboardItems: Array<[string, string]> =
   [[ItemMapper.mapOptionToIcon(ItemMapper.DashboardIcons.EDIT), "Edit Content"],
