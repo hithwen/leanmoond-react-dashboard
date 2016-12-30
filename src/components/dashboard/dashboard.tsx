@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { DashboardItemComponent } from './dashboard-item';
+import { DashboardItemComponent, DashboardItem } from './dashboard-item';
 
-export const DashboardComponent = (props: {
-  title: string,
-  items : Array<[string, string]>}) => {
-
+/**
+* title: Dasboard Title
+* items: [icon-css, icon name]
+*/
+export const _DashboardComponent = (props: {title: string,
+  items : Array<DashboardItem>}) => {
   return (
     <div className="dashboard">
       <div className="dashboard-title">
@@ -12,8 +14,8 @@ export const DashboardComponent = (props: {
       </div>
       <div className="dashboard-items">
       {props.items.map(
-        function(item) {
-          return <DashboardItemComponent icon={item[0]} text={item[1]} columnsize={4}/>
+        function(item: DashboardItem) {
+          return <DashboardItemComponent item={item}/>
       })}
       </div>
     </div>

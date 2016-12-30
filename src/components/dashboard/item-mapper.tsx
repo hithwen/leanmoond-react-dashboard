@@ -1,13 +1,8 @@
+import { DashboardIcons } from './index';
 /**
 * Util to map dashboard items to its icon representation
 */
 export module ItemMapper {
-  export enum DashboardIcons {
-    'EDIT',
-    'EVALUATE',
-    'BROWSE'
-  };
-
   export function mapOptionToIcon (icon: DashboardIcons) {
     return dashboardMapOptionToIcon[icon];
   };

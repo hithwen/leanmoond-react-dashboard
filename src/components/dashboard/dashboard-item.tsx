@@ -1,14 +1,21 @@
 import * as React from 'react';
+import {DashboardIcons} from './index'
+import {ItemMapper} from './item-mapper';
 
-export const DashboardItemComponent = (props: {
-  icon : string, text: string, columnsize: number}) => {
+export interface DashboardItem {
+  icon: DashboardIcons,
+  name: string, // Text to be displayed
+  reference: string, // link
+}
+
+export const DashboardItemComponent = (props: {item: DashboardItem}) => {
   return (
     <div className="dashboard-item">
       <p className="dashboard-item-icon">
-        <i className={props.icon} aria-hidden="true"></i>
+        <i className={ItemMapper.mapOptionToIcon(props.item.icon)} aria-hidden="true"></i>
       </p>
       <p className="dashboard-item-title">
-        {props.text}
+        {props.item.name}
       </p>
     </div>
   );

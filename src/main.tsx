@@ -1,14 +1,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { DashboardComponent } from './components/dashboard/dashboard';
-import {ItemMapper} from './components/dashboard/item-mapper';
+import {DashboardItem, DashboardIcons, DashboardComponent} from './components/dashboard/index';
 
-let dashboardItems: Array<[string, string]> =
-  [[ItemMapper.mapOptionToIcon(ItemMapper.DashboardIcons.EDIT), "Edit Content"],
-   [ItemMapper.mapOptionToIcon(ItemMapper.DashboardIcons.EVALUATE), "Evaluate tests"],
-   [ItemMapper.mapOptionToIcon(ItemMapper.DashboardIcons.BROWSE), "Browse Content"]
-  ];
+let dashboardItems: Array<DashboardItem> = [
+  {icon: DashboardIcons.EDIT, name:"Edit Content", reference:""},
+  {icon: DashboardIcons.EVALUATE, name:"Evaluate tests", reference:""},
+  {icon: DashboardIcons.BROWSE, name:"Browse Content", reference:""}];
+
+console.log(dashboardItems);
 
 ReactDOM.render(
   <DashboardComponent title="Master Lemon Code" items={dashboardItems}/>,
