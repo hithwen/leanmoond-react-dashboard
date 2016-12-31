@@ -9,13 +9,15 @@ export interface DashboardItem {
 
 export const DashboardItemComponent = (props: {item: DashboardItem}) => {
   return (
-    <div className="dashboard-item">
-      <p className="dashboard-item-icon">
-        <i className={ItemMapper.mapOptionToIcon(props.item.icon)} aria-hidden="true"></i>
-      </p>
-      <p className="dashboard-item-title">
-        {props.item.name}
-      </p>
-    </div>
+      <div className="dashboard-item-content">
+        <p className="dashboard-item-icon">
+          <a href={props.item.reference}>
+            <i className={ItemMapper.mapOptionToIcon(props.item.icon)} aria-hidden="true"></i>
+          </a>
+        </p>
+        <p className="dashboard-item-title">
+          <a href={props.item.reference}>{props.item.name}</a>
+        </p>
+      </div>
   );
 }

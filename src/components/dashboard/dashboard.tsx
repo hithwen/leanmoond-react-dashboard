@@ -15,7 +15,11 @@ export const DashboardComponent = (props: {title: string,
       <div className="dashboard-items">
       {props.items.map(
         function(item: DashboardItem) {
-          return <DashboardItemComponent item={item}/>
+          return (
+          <div className="dashboard-item" key={item.name}>
+            <DashboardItemComponent item={item}/>
+          </div>
+        )
       })}
       </div>
     </div>
